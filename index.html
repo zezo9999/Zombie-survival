@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie Survival: عالم الزومبي المفتوح</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-menu">
+        <h1>Zombie Survival</h1>
+        <button onclick="startGame()">ابدأ اللعبة</button>
+        <button onclick="showSettings()">الإعدادات</button>
+    </div>
+    <div class="settings" style="display:none;">
+        <h2>الإعدادات</h2>
+        <label>الصوت: <input type="range" min="0" max="100" value="50" id="volume"></label><br>
+        <label>الجرافيك:
+            <select id="graphics">
+                <option value="low">منخفض</option>
+                <option value="medium">متوسط</option>
+                <option value="high">عالي</option>
+            </select>
+        </label><br>
+        <button onclick="goBack()">رجوع</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
